@@ -1,13 +1,19 @@
-const drpDown = document.querySelector('.dropdown');
+const slImg = document.querySelector('#slImg');
+const slText1 = document.querySelector('#slText1');
+const slText2 = document.querySelector('#slText2');
+let showingFirst = true;
+let sltxt1 = slText1.textContent;
+let sltxt2 = slText2.textContent;
 
-const btn = document.querySelector('#btn');
-btn.addEventListener('mousemove',() => {
-    drpDown.style.display = 'block';
-    drpDown.style.backgroundColor = 'white';
-    drpDown.style.color = 'black';
-    drpDown.style.right = '50%';
-    // document.body.style.backgroundColor = 'black';
-});
-btn.addEventListener('mouseout',() =>{
-    drpDown.style.display = 'hidden';
-});
+setInterval(() => {
+  if (showingFirst) {
+    slImg.src = './slide2.jpg';
+    slText1.textContent = 'NEW GENERATION OF SKATING';
+    slText2.textContent = 'lorem dipsum ioler sit amit, consectetur adipisicing elit. Est odit dolorum voluptates.';
+  } else {
+    slImg.src = './slide1.jpg';
+    slText1.textContent = sltxt1;
+    slText2.textContent = sltxt2;
+  }
+  showingFirst = !showingFirst;
+}, 2000);
