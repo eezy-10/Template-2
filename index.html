@@ -12,7 +12,7 @@
         <a href="" class="text-xl text-orange-400 font-bold">SKATER</a>
         <div class="md:hidden">
             <button id="menu" class="text-white"><i id="icon" class="fa-solid fa-bars "></i></button>
-            <div class="bg-white z-10 flex-col hidden" id="menubar">
+            <div class="bg-white z-10 flex-col hidden absolute right-0" id="menubar">
                 <a href="#home" class="hover:text-orange-400 cursor-pointer active:text-orange-400 text-xl pl-2 pr-4 py-3">Home</a>
                 <a href="#services" class="hover:text-orange-400 cursor-pointer  active:text-orange-400 text-xl pl-2 pr-4 py-3">Services</a>
                 <a href="#about" class="hover:text-orange-400 cursor-pointer active:text-orange-400 text-xl pl-2 pr-4 py-3">About</a>
@@ -38,31 +38,31 @@
             <a href="#contact" class="text-lg px-5">Contact</a>
         </div>
     </nav>
-    <!-- <main>
+    <main>
         <div class="slideshow">
             <div class="relative">
                 <img src="./slide1.jpg" alt="" class="object-cover animate-[wiggle_2s_linear_infinite]" id="slImg">
                 <div class="absolute inset-0 bg-[rgba(0,0,0,0.2)] flex justify-center items-center">
-                    <div>
+                    <div class="hidden md:block">
                         <button class="slBtn">
-                            <i class="fa-solid fa-chevron-left cursor-pointer  text-xl text-gray-300 hover:text-white px-4"></i>
+                            <i class="fa-solid fa-chevron-left cursor-pointer text-xl text-gray-300 hover:text-white px-4"></i>
                         </button>
                     </div>
-                    <div class="text-white px-32 text-center">
-                        <h1 class="text-7xl tracking-tight" id="slText1">HI I'M JOHN AND I SKATE A LOT</h1>
-                        <p class="px-40 text-lg" id="slText2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo totam beatae possimus architecto.</p>
-                        <button class="my-14 border-2 px-6 py-3 cursor-pointer hover:bg-white hover:text-black">Get in touch</button>
+                    <div class="text-white md:px-32 text-center">
+                        <h1 class="text-lg md:text-7xl tracking-tight" id="slText1">HI I'M JOHN AND I SKATE A LOT</h1>
+                        <p class="md:px-40 md:text-lg text-sm" id="slText2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo totam beatae possimus architecto.</p>
+                        <button class="md:my-14 my-3 border-2 border-white px-3 md:px-6 py-1 md:py-3 cursor-pointer hover:bg-white hover:text-black">Get in touch</button>
                     </div>
-                    <div>
+                    <div class="hidden md:block">
                         <button class="slBtn">
-                            <i class="fa-solid fa-chevron-right cursor-pointer  text-xl text-gray-300 hover:text-white px-4"></i>
+                            <i class="fa-solid fa-chevron-right cursor-pointer text-xl text-gray-300 hover:text-white px-4"></i>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
         <div></div>
-    </main> -->
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

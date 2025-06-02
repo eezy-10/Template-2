@@ -17,41 +17,41 @@ menu.addEventListener('click', () => {
 });
 
 
-// const slImg = document.querySelector('#slImg');
-// const slText1 = document.querySelector('#slText1');
-// const slText2 = document.querySelector('#slText2');
-// let showingFirst = true;
-// let sltxt1 = slText1.textContent;
-// let sltxt2 = slText2.textContent;
+const slImg = document.querySelector('#slImg');
+const slText1 = document.querySelector('#slText1');
+const slText2 = document.querySelector('#slText2');
+let showingFirst = true;
+let sltxt1 = slText1.textContent;
+let sltxt2 = slText2.textContent;
 
-// setInterval(() => {
-//   if (showingFirst) {
-//     slImg.src = './slide2.jpg';
-//     slText1.textContent = 'NEW GENERATION OF SKATING';
-//     slText2.textContent = 'lorem dipsum ioler sit amit, consectetur adipisicing elit. Est odit dolorum voluptates.';
-//   } else {
-//     slImg.src = './slide1.jpg';
-//     slText1.textContent = sltxt1;
-//     slText2.textContent = sltxt2;
-//   }
-//   showingFirst = !showingFirst;
-// }, 5000);
+setInterval(() => {
+  if (showingFirst) {
+    slImg.src = './slide2.jpg';
+    slText1.textContent = 'NEW GENERATION OF SKATING';
+    slText2.textContent = 'lorem dipsum ioler sit amit, consectetur adipisicing elit. Est odit dolorum voluptates.';
+  } else {
+    slImg.src = './slide1.jpg';
+    slText1.textContent = sltxt1;
+    slText2.textContent = sltxt2;
+  }
+  showingFirst = !showingFirst;
+}, 5000);
 
 
-// const slBtn = document.querySelectorAll('.slBtn');
+const slBtn = document.querySelectorAll('.slBtn');
 
-// slBtn.forEach(btn => {
-//   btn.addEventListener("click", () => {
-//     // console.log("Clicked");
-//       if (showingFirst) {
-//       slImg.src = './slide2.jpg';
-//       slText1.textContent = 'NEW GENERATION OF SKATING';
-//       slText2.textContent = 'lorem dipsum ioler sit amit, consectetur adipisicing elit. Est odit dolorum voluptates.';
-//     } else {
-//       slImg.src = './slide1.jpg';
-//       slText1.textContent = sltxt1;
-//       slText2.textContent = sltxt2;
-//     }
-//     showingFirst = !showingFirst;
-//   });
-// });
+slBtn.forEach(btn => {
+  btn.addEventListener("click", () => {
+    // console.log("Clicked");
+      if (showingFirst) {
+      slImg.src = './slide2.jpg';
+      slText1.textContent = 'NEW GENERATION OF SKATING';
+      slText2.textContent = 'Lorem dipsum ioler sit amit, consectetur adipisicing elit. Est odit dolorum voluptates.';
+    } else {
+      slImg.src = './slide1.jpg';
+      slText1.textContent = sltxt1;
+      slText2.textContent = sltxt2;
+    }
+    showingFirst = !showingFirst;
+  });
+});
