@@ -2,21 +2,18 @@
 const menu = document.querySelector('#menu');
 const icon = document.querySelector('#icon');
 let iconVal = icon.classList.value;
-let select = true;
+let menuVisible = false;
 
-menu.addEventListener('click', () =>{
-  if(select){
+menu.addEventListener('click', () => {
   const menubar = document.querySelector('#menubar');
-  menubar.style.display = 'flex';
-  icon.classList.value = 'fa-solid fa-xmark';
-  menu.addEventListener('click', () => {
-    console.log('clicked');
+  if (!menuVisible) {
+    menubar.style.display = 'flex';
+    icon.classList.value = 'fa-solid fa-xmark';
+  } else {
     menubar.style.display = 'none';
-    return (icon.classList.value = iconVal);
-  });
-  menubar.style.display = 'flex';
+    icon.classList.value = iconVal;
   }
-  select = !select;
+  menuVisible = !menuVisible; // toggle the state
 });
 
 
