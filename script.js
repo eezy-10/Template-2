@@ -16,4 +16,4 @@ setInterval(() => {
     slText2.textContent = sltxt2;
   }
   showingFirst = !showingFirst;
-}, 2000);
+}, 5000);
