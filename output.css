@@ -673,6 +673,16 @@
       width: 40vw;
     }
   }
+  .md\:w-\[45dvw\] {
+    @media (width >= 48rem) {
+      width: 45dvw;
+    }
+  }
+  .md\:w-\[50dvw\] {
+    @media (width >= 48rem) {
+      width: 50dvw;
+    }
+  }
   .md\:w-auto {
     @media (width >= 48rem) {
       width: auto;
@@ -728,9 +738,19 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
+  .md\:px-16 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 16);
+    }
+  }
   .md\:px-20 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:px-24 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 24);
     }
   }
   .md\:px-28 {
