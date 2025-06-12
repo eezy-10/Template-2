@@ -16,7 +16,7 @@ menu.addEventListener('click', () => {
   menuVisible = !menuVisible; // toggle the state
 });
 
-
+//Slideshow
 const slImg = document.querySelector('#slImg');
 const slText1 = document.querySelector('#slText1');
 const slText2 = document.querySelector('#slText2');
@@ -57,6 +57,7 @@ slBtn.forEach(btn => {
 });
 
 
+//Testimonials
 const testi1 = document.querySelector('#testi1');
 const testi2 = document.querySelector('#testi2');
 const testi3 = document.querySelector('#testi3');
