@@ -55,3 +55,47 @@ slBtn.forEach(btn => {
     showingFirst = !showingFirst;
   });
 });
+
+
+const testi1 = document.querySelector('#testi1');
+const testi2 = document.querySelector('#testi2');
+const testi3 = document.querySelector('#testi3');
+const testi4 = document.querySelector('#testi4');
+
+
+let tstBtn1 = document.querySelector('#tstBtn1');
+let oldProp = tstBtn1.classList.value;
+let newProp = tstBtn1.classList.value.replace('text-[8px]', 'text-[12px]').replace('text-white', 'text-orange-400');
+
+tstBtn1.addEventListener('click',() => {
+  tstBtn1.classList.value = newProp;
+});
+// tstBtn1.classList.value = oldProp;
+
+const tstBtn2 = document.querySelector('#tstBtn2');
+tstBtn2.addEventListener('click',() => {
+  tstBtn2.classList.value = newProp;
+  let stateChange = testi2.classList.value.replace('hidden', 'flex');
+  testi1.classList.value += 'hidden';
+  if(testi3.classList.value == 'block'){
+    testi3.classList.value.replace('block', 'hidden');
+  }
+  if(testi4.classList.value == 'block'){
+    testi4.classList.value.replace('block', 'hidden');
+  }
+  testi2.classList.value = stateChange;
+});
+
+const tstBtn3 = document.querySelector('#tstBtn3');
+tstBtn3.addEventListener('click',() => {
+  tstBtn3.classList.value = newProp;
+  let stateChange = testi3.classList.value.replace('hidden', 'block');
+  testi2.classList.value += 'hidden';
+  testi1.classList.value += 'hidden';
+  testi3.classList.value = stateChange;
+});
+
+const tstBtn4 = document.querySelector('#tstBtn4');
+tstBtn4.addEventListener('click',() => {
+  tstBtn4.classList.value = newProp;
+});
